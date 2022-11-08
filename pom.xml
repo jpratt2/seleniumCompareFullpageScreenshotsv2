@@ -23,8 +23,7 @@
       <dependency>
       <groupId>com.codeborne</groupId>
       <artifactId>selenide</artifactId>
-      <version>6.7.0</version>
-      <scope>test</scope>
+      <version>6.9.0</version>
     </dependency>
     
     <!--https://github.com/selenide/selenide/pull/1858-->
@@ -32,7 +31,6 @@
       <groupId>com.codeborne</groupId>
       <artifactId>selenide-full-screenshot</artifactId>
       <version>6.7.0</version>
-      <scope>test</scope>
     </dependency>
 
 <dependency>

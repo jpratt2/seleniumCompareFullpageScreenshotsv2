@@ -7,35 +7,9 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-public class ScreenshotSBug {
+public class compareImagesSBug {
     
-    //this class uses Shutterbug https://github.com/assertthat/selenium-shutterbug
-    //at this time it doesn't seem to work as well as the regular Screenshot class
 
-    /**
-     * creates a full-page screenshot
-     *
-     * @param   driver      WebDriver instance
-     * @param   fileName    String, name of image file to be created
-     *                      If the fileName is omitted, the default value of the URL will be used (converted to remove forbidden characters)
-     * @param   folderPath  String, path to the folder that will contain the screenshots
-     *                      If the folderPath is omitted, the default value of "screenshots" will be used.
-     */
-    public static void fullpage(WebDriver driver, String folderPath, String fileName){
-        Shutterbug.shootPage(driver, Capture.FULL).withName(fileName).save(folderPath);
-    }
-    public static void fullpage(WebDriver driver, String folderPath){
-        String url = driver.getCurrentUrl();
-        String fileName = Utilities.convertUrlToFileName(url);
-        fullpage(driver, folderPath, fileName);
-    }
-    public static void fullpage(WebDriver driver){
-        String folderPath = "screenshots";
-        fullpage(driver, folderPath);
-    }
-
-
-    //note: the following function has a bug
     //see https://github.com/assertthat/selenium-shutterbug/issues/70 for details
     /**
      * assert a full-page screenshot
