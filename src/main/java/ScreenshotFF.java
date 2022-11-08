@@ -13,8 +13,9 @@ public class ScreenshotFF {
     public static void fullpage(RemoteWebDriver driver, String folder) {
         driver =(FirefoxDriver)driver;
         String URL = driver.getCurrentUrl();
-        byte[] imageBytes = ((FirefoxDriver)driver).getFullPageScreenshotAs(OutputType.BYTES); //source: https://stackoverflow.com/a/66859108/1691651
         String filename = Utilities.convertUrlToFileName(URL);
+
+        byte[] imageBytes = ((FirefoxDriver)driver).getFullPageScreenshotAs(OutputType.BYTES); //source: https://stackoverflow.com/a/66859108/1691651
         Utilities.saveImage(filename,folder,imageBytes);
 
     }

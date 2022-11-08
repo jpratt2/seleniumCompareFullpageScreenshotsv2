@@ -3,7 +3,13 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import javax.imageio.ImageIO;
+
+import ru.yandex.qatools.ashot.Screenshot;
+
 public class Utilities {
+    static String path = System.getProperty("user.dir");
+    static String separator = File.separator;
 
     static String convertUrlToFileName(String url){
         url = url.replaceFirst("https?://","");
@@ -13,10 +19,18 @@ public class Utilities {
     }
 
     static void saveImage(String filename, String folder, byte[] imageBytes){
-        String path = System.getProperty("user.dir");
-        String separator = File.separator;
+        String filenameWithPath = path + separator + folder + separator + filename + ".png";
         try {
-            Files.write(Paths.get(path + separator + folder + separator + filename + ".png"), imageBytes);
+            Files.write(Paths.get(filenameWithPath), imageBytes);
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    static void saveImage(String filename, String folder, Screenshot screenshot){
+        String filenameWithPath = path + separator + folder + separator + filename + ".png";
+        try {
+        ImageIO.write(screenshot.getImage(),"PNG",new File(filenameWithPath));
         }catch (IOException e){
             e.printStackTrace();
         }
