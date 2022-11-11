@@ -22,9 +22,9 @@ public class A_1Test extends Setup{
     public void a1()  throws Exception{
         
         //Selenide framework
-        open("https://adobe.com/acrobat.html");
-        Thread.sleep(1000);
-        screenshot("..\\..\\..\\my_file_name_edge");
+        //open("https://adobe.com/acrobat.html");
+        //Thread.sleep(1000);
+//        screenshot("..\\..\\..\\my_file_name_edge");
 
 
         /* 

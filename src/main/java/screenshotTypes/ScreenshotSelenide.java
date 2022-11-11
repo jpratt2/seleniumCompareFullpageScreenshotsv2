@@ -1,3 +1,4 @@
+package screenshotTypes;
 import static com.codeborne.selenide.Selenide.*;
 
 import org.openqa.selenium.remote.RemoteWebDriver;

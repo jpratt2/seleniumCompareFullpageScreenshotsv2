@@ -1,3 +1,4 @@
+package screenshotTypes;
 import com.assertthat.selenium_shutterbug.core.Capture;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -24,7 +25,7 @@ public class ScreenshotSBug {
         fullpage(driver, folderPath, fileName);
     }
     public static void fullpage(RemoteWebDriver driver){
-        String folderPath = "screenshots";
+        String folderPath = "expected";
         fullpage(driver, folderPath);
     }
 

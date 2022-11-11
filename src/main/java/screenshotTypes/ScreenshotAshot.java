@@ -1,3 +1,4 @@
+package screenshotTypes;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import ru.yandex.qatools.ashot.AShot;

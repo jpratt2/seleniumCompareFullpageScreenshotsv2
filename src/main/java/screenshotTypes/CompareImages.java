@@ -1,3 +1,4 @@
+package screenshotTypes;
 import ru.yandex.qatools.ashot.comparison.ImageDiff;
 import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 import javax.imageio.ImageIO;
