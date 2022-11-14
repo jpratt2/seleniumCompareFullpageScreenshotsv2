@@ -5,7 +5,7 @@ import screenshotTypes.*;
 
 public class Setup {
      static Consumer<RemoteWebDriver> screenshotMethod;
-     static String browser, screenshotTool;
+     public static String browser, screenshotTool;
      static int browserWidth, browserHeight, pause;
  
 {
