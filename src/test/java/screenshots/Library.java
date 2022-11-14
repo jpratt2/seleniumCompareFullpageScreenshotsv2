@@ -10,12 +10,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Library {
 	static void UrlLoop(String[] urlList, Consumer<RemoteWebDriver> method) {
 		for (int i = 0; i < urlList.length; i++) {
-			int x=123;
 			RemoteWebDriver driver = getRemoteWebDriver();//start a new, fresh browser for each web page
 			String URL = urlList[i];
 			driver.get(URL);
 			try {
-				Thread.sleep(1);//wait for the page to fully load
+				Thread.sleep(Setup.pause);//wait for the page to fully load
 			} catch (Exception e) {}
 			method.accept(driver);
 			driver.quit();
@@ -32,7 +31,7 @@ public class Library {
 			for(int x=0;x<2;x++) {
 				driver.get(URL);
 				try {
-					Thread.sleep(10000);//wait for the page to fully load
+					Thread.sleep(Setup.pause);//wait for the page to fully load
 				} catch (Exception e) {}
 			}
 			method.accept(driver);
