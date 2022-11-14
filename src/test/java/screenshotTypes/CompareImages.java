@@ -7,8 +7,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-
-
 public class CompareImages {
      /*
         compareImage
@@ -25,7 +23,7 @@ public class CompareImages {
         String fileName = Utilities.convertUrlToFileName(URL);
 
         //take a fresh full-page image and put it in the "observed" folder
-        switch(Setup.)
+        switch()
         ScreenshotFF.fullpage(driver, "observed");
 
         //read data for baseline image (from the "expected" folder, typically)
