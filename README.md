@@ -22,20 +22,22 @@ It comes with 2 tests ready for Maven:
 URLs for your test should be put here: [src/test/java/URLs.java](https://github.com/jpratt2/seleniumCompareFullpageScreenshots/blob/master/src/test/java/URLs.java).  
 
 To get started, navigate to the Setup file in the "screenshots" package and select the browser and screenshot tool.
-`          // 1. Choose a browser by uncommenting a line below.
-                     browser = "chrome";
-                    // browser = "firefox";
-                    // browser = "edge";        
 
-          // 2. Enter the desired browser width and height in pixels
-                    browserWidth = 1440;
-                    browserHeight = 900;
+          // 1. Choose a browser by uncommenting a line below.
+                      browser = "chrome";
+                   // browser = "firefox";
+                   // browser = "edge";      
+
+         // 2. Enter the desired browser width and height in pixels`
+                    browserWidth = 1440;`
+                    browserHeight = 900;`
 
           // 3. Select the screenshot tool by uncommenting one of the following lines.
                     // screenshotTool = "ashot";
-                   //  screenshotTool = "selenide"; 
-                    screenshotTool = "shutterbug";
-                    // screenshotTool = "firefox-selenium";` 
+                    // screenshotTool = "selenide"; 
+                       screenshotTool = "shutterbug";
+                    // screenshotTool = "firefox-selenium";
+
 
 
 **The file name will be the URL (with forbidden characters replaced by a dash).**
