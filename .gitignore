@@ -3,16 +3,16 @@ target
 .idea
 .vscode
 
-expected/*
+expected
 # exception to the rule, keep this one file
 !expected/.gitkeep 
 
-observed/*
+observed
 # exception to the rule, keep this one file
 !observed/.gitkeep 
 
-diffs/*
+diffs
 # exception to the rule, keep this one file
 !diffs/.gitkeep 
 
-build/
+build
