@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import screenshotTypes.*;
 
 public class Library {
 	static void UrlLoop(String[] urlList, Consumer<RemoteWebDriver> method) {
@@ -64,5 +65,24 @@ public class Library {
 		return driver;
 	}
 		
-	
+	public static Consumer<RemoteWebDriver> getScreenshotMethod(){  
+        Consumer<RemoteWebDriver> screenshotMethod; 
+        switch(Setup.screenshotTool){
+            case "selenide":
+                screenshotMethod = ScreenshotSelenide::fullpage;
+                break;
+            case "ashot":
+                screenshotMethod = ScreenshotAshot::fullpage;
+                break;
+            case "shutterbug":
+                screenshotMethod = ScreenshotSBug::fullpage;
+                break;
+            case "firefox-selenium":
+                screenshotMethod = ScreenshotFF::fullpage;
+                break;
+            default:
+                screenshotMethod = ScreenshotSBug::fullpage;
+        }
+        return screenshotMethod;
+    }
 }

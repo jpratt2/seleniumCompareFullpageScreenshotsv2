@@ -3,9 +3,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-
 import javax.imageio.ImageIO;
-
 import ru.yandex.qatools.ashot.Screenshot;
 
 public class Utilities {
@@ -47,10 +45,12 @@ public class Utilities {
         //resource: https://www.dotnetperls.com/truncate-java
     }
 
-    static void echo(Object object){
+    public static void echo(Object object){
         //used for debugging, logs a value to the console
         System.out.println("*********begin echo**********");
         System.out.println(object);
         System.out.println("*********end echo**********");
     }
+
+
 }

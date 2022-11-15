@@ -12,7 +12,6 @@ public class ScreenshotFF {
         use Selenium 4 and Firefox to take a full page screenshot
      */
     public static void fullpage(RemoteWebDriver driver, String folder) {
-        driver =(FirefoxDriver)driver;
         String URL = driver.getCurrentUrl();
         String filename = Utilities.convertUrlToFileName(URL);
 

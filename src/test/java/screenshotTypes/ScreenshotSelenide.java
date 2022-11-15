@@ -12,7 +12,7 @@ public class ScreenshotSelenide {
         String separator = File.separator;
         String url = driver.getCurrentUrl();
         String fileName = Utilities.convertUrlToFileName(url);
-        screenshot(".." + separator + ".." + separator + ".." + separator + foldername + separator + fileName + ".png");
+        screenshot(".." + separator + ".." + separator + ".." + separator + foldername + separator + fileName);
     
     }
 

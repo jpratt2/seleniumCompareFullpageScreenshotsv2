@@ -10,8 +10,8 @@ public class A_createExpectedImagesTest extends Setup{
     public void createExpectedImages()  {
         //create a full-page image of the URLs in the "expected" folder
         
-        Library.UrlLoop(URLs.list,Setup.screenshotMethod);
-        Library.UrlLoopTwiceLoaded(URLs.listTwiceLoaded,Setup.screenshotMethod);
+        Library.UrlLoop(URLs.list,Library.getScreenshotMethod());
+        Library.UrlLoopTwiceLoaded(URLs.listTwiceLoaded,Library.getScreenshotMethod());
 
     }
 
