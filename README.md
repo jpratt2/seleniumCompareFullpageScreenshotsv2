@@ -1,12 +1,13 @@
-# Selenium Compare Fullpage Screenshots
+# Selenium Compare Fullpage Screenshots v2
 *for Java and Maven*
 
 
-This project is useful for website monitoring on production for any visual change.  
+This project is useful for website monitoring for any visual change.  
 
-It uses Selenium 4 to take full-page screenshots in Firefox. It compares a baseline image against a current image to generate a diff image with differences highlighted in red. If there is no difference, no diff image is made.
+It offers the ability to use Chrome, Firefox, or Edge. There are 4 different full-page screenshot options: selenide, shutterbug, a-shot, and Firefox's option for Selenium 4.
 
 ---
+
 
 It comes with 2 tests ready for Maven:
 
@@ -20,25 +21,31 @@ It comes with 2 tests ready for Maven:
 ---
 URLs for your test should be put here: [src/test/java/URLs.java](https://github.com/jpratt2/seleniumCompareFullpageScreenshots/blob/master/src/test/java/URLs.java).  
 
-Basic syntax for a full-page screenshot:  
-`Screenshot.fullpage(driver);` 
+To get started, navigate to the Setup file in the "screenshots" package and select the browser and screenshot tool.
+`          // 1. Choose a browser by uncommenting a line below.
+                     browser = "chrome";
+                    // browser = "firefox";
+                    // browser = "edge";        
 
-Basic syntax to compare a full-page screenshot against the corresponding image in the "expected" folder:  
-`Screenshot.compareImage(driver);`
- 
-Additionally, the acceptance level can be set with a "pixelThreshold" value which is the amount of pixels that can be different and still be considered acceptable as a match. 
-For example:
-`Screenshot.compareImage(driver, 100)`
+          // 2. Enter the desired browser width and height in pixels
+                    browserWidth = 1440;
+                    browserHeight = 900;
+
+          // 3. Select the screenshot tool by uncommenting one of the following lines.
+                    // screenshotTool = "ashot";
+                   //  screenshotTool = "selenide"; 
+                    screenshotTool = "shutterbug";
+                    // screenshotTool = "firefox-selenium";` 
+
 
 **The file name will be the URL (with forbidden characters replaced by a dash).**
 
-An example of use:
+
 ```
-            driver.get(URL);
-            Thread.sleep(3000);//wait for the page to fully load
-            Screenshot.compareImage(driver);
+See also version 1 of this tool for an easy way to configure Firefox's screenshot tool.
+https://github.com/jpratt2/seleniumCompareFullpageScreenshots 
+
 ```
-I recommend a delay for the page to fully load.  
 [AShot](https://github.com/pazone/ashot) is used for the file comparison.  
 
 It is necessary to check the diffs folder visually to see if there are any test failures.  
