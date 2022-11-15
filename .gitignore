@@ -2,7 +2,17 @@ target
 *.iml
 .idea
 .vscode
-expected/
-observed/
-diffs/
+
+expected/*
+# exception to the rule, keep this one file
+!expected/.gitkeep 
+
+observed/*
+# exception to the rule, keep this one file
+!observed/.gitkeep 
+
+diffs/*
+# exception to the rule, keep this one file
+!diffs/.gitkeep 
+
 build/
