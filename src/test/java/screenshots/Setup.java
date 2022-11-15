@@ -1,9 +1,7 @@
 package screenshots;
-import java.util.function.Consumer;
-import org.openqa.selenium.remote.RemoteWebDriver;
+
 
 public class Setup {
-     static Consumer<RemoteWebDriver> screenshotMethod;
      public static String browser, screenshotTool;
      static int browserWidth, browserHeight, pause;
  
@@ -31,9 +29,6 @@ public class Setup {
 }
                     
 
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////        
           
 
