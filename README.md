@@ -19,7 +19,7 @@ It comes with 2 tests ready for Maven:
 `mvn "-Dtest=B*" test`  
 
 ---
-URLs for your test should be put in the [URLs.java](https://github.com/jpratt2/seleniumCompareFullpageScreenshots-v2/blob/master/src/test/java/screenshots/URLs.java) file.  
+URLs for your test should be put in the [URLs.java](https://github.com/jpratt2/seleniumCompareFullpageScreenshotsv2/blob/master/src/test/java/screenshots/URLs.java) file.  
 
 To get started, navigate to the Setup file in the "screenshots" package and select the browser and screenshot tool.
 
