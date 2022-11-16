@@ -9,17 +9,19 @@ It offers the ability to use Chrome, Firefox, or Edge. There are 4 different ful
 ---
 
 
-It comes with 2 tests ready for Maven:
+It comes with 2 Maven commands ready for use:
 
 ### Create baseline images and put them in the "expected" folder at the root of the project  
 `mvn "-Dtest=A*" test`  
 
----
+
 ### Create current images in the "observed" folder and diffs (if any) in the "diffs" folder.  
 `mvn "-Dtest=B*" test`  
 
 ---
 URLs for your test should be put in the [URLs.java](https://github.com/jpratt2/seleniumCompareFullpageScreenshotsv2/blob/master/src/test/java/screenshots/URLs.java) file.  
+
+---
 
 To get started, navigate to the Setup file in the "screenshots" package and select the browser and screenshot tool.
 
@@ -29,8 +31,8 @@ To get started, navigate to the Setup file in the "screenshots" package and sele
                    // browser = "edge";      
 
           // 2. Enter the desired browser width and height in pixels
-                    browserWidth = 1440;
-                    browserHeight = 900;
+                    browserWidth = 1366;
+                    browserHeight = 768;
 
           // 3. Select the screenshot tool by uncommenting one of the following lines.
                     // screenshotTool = "ashot";
@@ -39,7 +41,7 @@ To get started, navigate to the Setup file in the "screenshots" package and sele
                     // screenshotTool = "firefox-selenium";
 
 
-
+---
 **The file name will be the URL (with forbidden characters replaced by a dash).**
 
 

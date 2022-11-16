@@ -14,8 +14,8 @@ public class Setup {
                     // browser = "edge";        
 
           // 2. Enter the desired browser width and height in pixels
-                    browserWidth = 1440;
-                    browserHeight = 900;
+                    browserWidth = 1366;
+                    browserHeight = 768;
 
           // 3. Select the screenshot tool by uncommenting one of the following lines.
                     // screenshotTool = "ashot";
