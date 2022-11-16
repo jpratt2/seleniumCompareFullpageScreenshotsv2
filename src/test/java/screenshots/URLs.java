@@ -4,7 +4,6 @@ public class URLs {
     public static String[] list = {
   
 	"https://adobe.com/acrobat.html",
-	"https://adobe.com",
 
 
 
