@@ -44,7 +44,7 @@ To get started, navigate to the Setup file in the "screenshots" package and sele
 
 
 ---
-See also version 1 of this tool for an easy way to configure Firefox's screenshot tool. 
+See also version 1 of this tool for an easy way to configure Firefox's screenshot tool in Selenium for website monitoring. 
 [https://github.com/jpratt2/seleniumCompareFullpageScreenshots](https://github.com/jpratt2/seleniumCompareFullpageScreenshots) 
 
 ---
