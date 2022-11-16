@@ -29,8 +29,8 @@ To get started, navigate to the Setup file in the "screenshots" package and sele
                    // browser = "edge";      
 
          // 2. Enter the desired browser width and height in pixels`
-                    browserWidth = 1440;`
-                    browserHeight = 900;`
+                    browserWidth = 1440;
+                    browserHeight = 900;
 
           // 3. Select the screenshot tool by uncommenting one of the following lines.
                     // screenshotTool = "ashot";
