@@ -20,7 +20,7 @@ It comes with 2 Maven commands ready for use:
 
 ---
 URLs for your test should be put in the [URLs.java](https://github.com/jpratt2/seleniumCompareFullpageScreenshotsv2/blob/master/src/test/java/screenshots/URLs.java) file.  
-
+---
 To get started, navigate to the Setup file in the "screenshots" package and select the browser and screenshot tool.
 
           // 1. Choose a browser by uncommenting a line below.
