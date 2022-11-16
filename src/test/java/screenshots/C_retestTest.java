@@ -1,5 +1,8 @@
 package screenshots;
+import screenshotTypes.CompareImages;
+import java.util.function.Consumer;
 import org.junit.Test;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 
 public class C_retestTest extends Setup {
