@@ -43,11 +43,12 @@ To get started, navigate to the Setup file in the "screenshots" package and sele
 **The file name will be the URL (with forbidden characters replaced by a dash).**
 
 
-```
-See also version 1 of this tool for an easy way to configure Firefox's screenshot tool.
-https://github.com/jpratt2/seleniumCompareFullpageScreenshots 
+---
+See also version 1 of this tool for an easy way to configure Firefox's screenshot tool. 
+[https://github.com/jpratt2/seleniumCompareFullpageScreenshots](https://github.com/jpratt2/seleniumCompareFullpageScreenshots) 
 
-```
+---
+
 [AShot](https://github.com/pazone/ashot) is used for the file comparison.  
 
 It is necessary to check the diffs folder visually to see if there are any test failures.  
