@@ -39,7 +39,7 @@ To get started, navigate to the Setup file in the "screenshots" package and sele
                     // screenshotTool = "firefox-selenium";
 
 
-
+---
 **The file name will be the URL (with forbidden characters replaced by a dash).**
 
 
