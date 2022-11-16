@@ -9,7 +9,7 @@ It offers the ability to use Chrome, Firefox, or Edge. There are 4 different ful
 ---
 
 
-It comes with 2 tests ready for Maven:
+It comes with 2 Maven commands ready for use:
 
 ### Create baseline images and put them in the "expected" folder at the root of the project  
 `mvn "-Dtest=A*" test`  
