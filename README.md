@@ -14,7 +14,7 @@ It comes with 2 Maven commands ready for use:
 ### Create baseline images and put them in the "expected" folder at the root of the project  
 `mvn "-Dtest=A*" test`  
 
----
+
 ### Create current images in the "observed" folder and diffs (if any) in the "diffs" folder.  
 `mvn "-Dtest=B*" test`  
 
