@@ -28,7 +28,7 @@ To get started, navigate to the Setup file in the "screenshots" package and sele
                    // browser = "firefox";
                    // browser = "edge";      
 
-         // 2. Enter the desired browser width and height in pixels`
+          // 2. Enter the desired browser width and height in pixels
                     browserWidth = 1440;
                     browserHeight = 900;
 
