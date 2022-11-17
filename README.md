@@ -6,6 +6,8 @@ This project is useful for website monitoring for any visual change.
 
 It offers the ability to use Chrome, Firefox, or Edge. There are 4 different full-page screenshot options: Selenide (CDP), Shutterbug, AShot, and Firefox/Selenium.
 
+Note: Firefox/Selenium appears to be the best, most consistent option.
+
 ---
 
 
