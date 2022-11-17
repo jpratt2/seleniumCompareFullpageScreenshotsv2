@@ -18,19 +18,20 @@ public class Setup {
                     browserHeight = 768;
 
           // 3. Select the screenshot tool by uncommenting one of the following lines.
-                    // screenshotTool = "ashot";
-                   //  screenshotTool = "selenide"; 
-                    screenshotTool = "shutterbug";
+                   //  screenshotTool = "ashot";
+                    screenshotTool = "selenide"; 
+                   // screenshotTool = "shutterbug";
                     // screenshotTool = "firefox-selenium";
 
           // 4. Delay in milliseconds for the page to finish loading prior to the screenshot. 
                     pause = 5000; 
                     
-}
+          //Please note: the most reliable screenshot tool is probably firefox-selenium.
+          //For Chrome, selenide is the next best option.
                     
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////        
-          
+}      
 
 
  
