@@ -28,6 +28,8 @@ public class Setup {
                     
           //Please note: the most reliable screenshot tool is probably firefox-selenium.
           //For Chrome, selenide is the next best option.
+
+          //Please also note: for selenide it is necessary to empty the "observed folder" (as well as the "diffs" folder) before each use. Selenide doesn't overwrite files.
                     
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////        
