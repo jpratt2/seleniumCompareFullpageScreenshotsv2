@@ -7,7 +7,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class D_recompare_ShortlistTest extends Setup {
     @Test
-    public void _01_testAgainstBaseline() throws Exception {
+    public void testAgainstBaseline() throws Exception {
 		//Same as B_ --for retesting a smaller list using the "shortlist" in the URLs file
 
         Consumer<RemoteWebDriver> comparisonMethod = CompareImages::compare;
