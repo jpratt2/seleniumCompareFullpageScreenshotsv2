@@ -4,7 +4,7 @@ import org.junit.Test;
 
 
 
-public class C_retakeBaseline_ShortlistTest extends Setup{
+public class C_retakeExpected_ShortlistTest extends Setup{
 
     @Test
     public void createExpectedImages() throws Exception {
