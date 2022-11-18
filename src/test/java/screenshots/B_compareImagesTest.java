@@ -9,7 +9,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class B_compareImagesTest extends Setup{
     @Test
-    public void _01_testAgainstBaseline() throws InterruptedException {
+    public void testAgainstBaseline() throws Exception {
         //create a full-page image of the URLs in the list, but this time in the "observed" folder
         Consumer<RemoteWebDriver> comparisonMethod = CompareImages::compare;
         

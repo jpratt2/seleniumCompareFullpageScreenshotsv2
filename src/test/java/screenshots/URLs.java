@@ -20,12 +20,12 @@ public class URLs {
 	
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////	
-	public static String[] retest = { 
+	public static String[] shortlist = { 
  
 	
 	};
 
-	public static String[] retestTwiceLoaded = {
+	public static String[] shortlistTwiceLoaded = {
 
 
 	};

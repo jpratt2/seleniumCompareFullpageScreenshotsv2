@@ -9,20 +9,18 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import screenshotTypes.*;
 
 public class Library {
-	static void UrlLoop(String[] urlList, Consumer<RemoteWebDriver> method) {
+	static void UrlLoop(String[] urlList, Consumer<RemoteWebDriver> method) throws InterruptedException {
 		for (int i = 0; i < urlList.length; i++) {
 			RemoteWebDriver driver = getRemoteWebDriver();//start a new, fresh browser for each web page
 			String URL = urlList[i];
 			driver.get(URL);
-			try {
-				Thread.sleep(Setup.pause);//wait for the page to fully load
-			} catch (Exception e) {}
+			Thread.sleep(Setup.pause);//wait for the page to fully load
 			method.accept(driver);
 			driver.quit();
 		}
 	}
 
-	static void UrlLoopTwiceLoaded(String[] urlList, Consumer<RemoteWebDriver> method){
+	static void UrlLoopTwiceLoaded(String[] urlList, Consumer<RemoteWebDriver> method) throws InterruptedException{
 		for (int i = 0; i < urlList.length; i++) {
 
 			RemoteWebDriver driver = getRemoteWebDriver();//start a new, fresh browser for each web page
@@ -31,9 +29,7 @@ public class Library {
 			//load the page twice
 			for(int x=0;x<2;x++) {
 				driver.get(URL);
-				try {
-					Thread.sleep(Setup.pause);//wait for the page to fully load
-				} catch (Exception e) {}
+				Thread.sleep(Setup.pause);//wait for the page to fully load
 			}
 			method.accept(driver);
 			driver.quit();
