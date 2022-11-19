@@ -5,7 +5,8 @@ public class Setup {
      public static String browser, screenshotTool;
      static int browserWidth, browserHeight, pause;
  
-{
+     public static void initialize(){
+
 //////////////////////////////////  PLEASE MAKE SELECTIONS BELOW  ////////////////////////////////////////////////////////////////////   
      
           // 1. Choose a browser by uncommenting a line below.
@@ -33,13 +34,10 @@ public class Setup {
                     
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////        
-}      
 
 
- 
+     }         
 
-           
-        
      
 }
 
