@@ -1,9 +1,6 @@
 package screenshots;
-
-import screenshotTypes.CompareImages;
-import java.util.function.Consumer;
 import org.junit.Test;
-import org.openqa.selenium.remote.RemoteWebDriver;
+
 
 
 
@@ -13,9 +10,9 @@ public class B_compareImagesTest{
     public void testAgainstBaseline() throws Exception {
         //create a full-page image of the URLs in the list, but this time in the "observed" folder
         Setup.initialize();  
-        Consumer<RemoteWebDriver> comparisonMethod = CompareImages::compare;
-        Library.UrlLoop(URLs.list,comparisonMethod);
-        Library.UrlLoopTwiceLoaded(URLs.listTwiceLoaded,comparisonMethod);
+
+        Library.UrlsObserved(URLs.list,  0);
+        Library.UrlsObservedTwiceLoaded(URLs.listTwiceLoaded, 0);
 
 
     }

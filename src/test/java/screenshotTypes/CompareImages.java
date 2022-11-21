@@ -20,23 +20,6 @@ public class CompareImages {
         String pathObserved = "observed";
         String pathDiff = "diffs";
 
-        //take a fresh full-page image and put it in the "observed" folder
-
-        switch(Setup.screenshotTool){
-            case "ashot":
-                ScreenshotAshot.fullpage(driver,pathObserved);
-                break;
-            case "selenide":
-                ScreenshotSelenide.fullpage(driver,pathObserved);
-                break;
-            case "shutterbug":
-                ScreenshotSBug.fullpage(driver, pathObserved);
-                break;
-            case "firefox-selenium":
-                ScreenshotFF.fullpage(driver,pathObserved);
-                break;
-        }
-
 
         //read data from the "expected" folder for the baseline image 
         String URL = driver.getCurrentUrl();
